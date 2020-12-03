@@ -1,3 +1,4 @@
-# thrrichard.github.io
+# trhrichard.tk
 
-ITS LITERRALY SOMETHING
+Richard's Website
+no information bruh
