@@ -1,3 +1,4 @@
 # trhrichard.tk
 
-Hello It's me Richard and welcome!
+Richard's Website
+no information bruh
