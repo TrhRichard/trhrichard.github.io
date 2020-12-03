@@ -1,5 +1,6 @@
 ---
-  title: Richard's Website
+layout: default
+htitle: "Richard's Website"
 ---
 
 
