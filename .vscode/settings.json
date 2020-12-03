@@ -1,0 +1,27 @@
+{
+    "files.exclude": {
+        // Hide useless stuff
+        "**/.vscode": true,
+        "**/package-lock.json": true,
+    },
+    "eslint.enable": false,
+    "cSpell.words": [
+        "DATALOG",
+        "Diancie",
+        "Downvote",
+        "Downvoted",
+        "Ledom",
+        "Melecie's",
+        "Nonexisty",
+        "ROWID",
+        "Singleplayer",
+        "Upvote",
+        "davecode",
+        "downlevel",
+        "downvotes",
+        "localforage",
+        "melecie",
+        "savefile",
+        "vari"
+    ]
+}
