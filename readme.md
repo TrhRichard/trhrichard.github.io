@@ -1,3 +1,3 @@
-# thrrichard.github.io
+# trhrichard.tk
 
-ITS LITERRALY SOMETHING
+Hello It's me Richard and welcome!
