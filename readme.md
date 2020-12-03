@@ -5,7 +5,7 @@ title: "Richard's Website"
 ---
 
 
-# trhrichard.tk
+# Richard's Website
 
 Richard's Website
 no information bruh
