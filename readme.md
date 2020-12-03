@@ -1,6 +1,7 @@
 ---
 layout: default
 htitle: "Richard's Website"
+title: "Richard's Website"
 ---
 
 
