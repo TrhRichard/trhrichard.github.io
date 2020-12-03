@@ -1,10 +1,5 @@
-node_modules
-.env
-keys
-data
-.gcloud.json
-dist_*
-
-# Nv7
-creds.go
-readme.md
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
