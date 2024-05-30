@@ -25,7 +25,7 @@ let stats = {
         name: "Toilet",
         price: 100,
         value: 0,
-        add_multiplier: 10,
+        add_multiplier: 5,
     }
 }
 
