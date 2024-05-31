@@ -14,27 +14,34 @@ body {
     flex-direction: column;
 }
 
-.gamebuttons button {
+#clicker {
+    padding: 50px;
+    font-size: x-large;
+}
+
+button {
     font-family: 'Trebuchet MS';
     font-size: large;
     transition-duration: 0.1s;
-    padding: 10px 25px;
-    background-color: #373755;
+    padding: 10px;
+    background-color: #454572;
     border: 2px solid #14141f; 
     color: white;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.gamebuttons button:hover {
-    background-color: rgb(30, 30, 46);
+button:hover {
+    background-color: #3e3e66;
 }
+
 
 #center {
     margin: auto;
     width: 50%;
     padding: 10px;
     text-align: center;
+    margin-top: 12.5%;
 }
 
 .items_stuff {
@@ -50,18 +57,5 @@ body {
 }
 
 .items_stuff button {
-    display: inline-block;
-    font-family: 'Trebuchet MS';
-    font-size: large;
-    padding: 10px;
-    background-color: #4f4f81;
-    border: 2px solid #14141f; 
-    color: white;
-    border-radius: 5px;
     width: 100%;
-    margin-bottom: 10px;
-}
-
-.items_stuff button:hover {
-    background-color: #43436e;
 }

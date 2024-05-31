@@ -6,7 +6,7 @@ const shop = document.querySelector("#shop")
 const shop_buttons = shop.querySelector("#buttons")
 const statsDiv = document.querySelector("#stats")
 
-shop.hidden = false
+set_shop_visible(false)
 
 // :)
 let stats = {
@@ -21,11 +21,11 @@ let stats = {
         price: 100,
         value: false,
     },
-    toilets: {
-        name: "Toilet",
+    computers: {
+        name: "Computer",
         price: 100,
         value: 0,
-        add_multiplier: 5,
+        add_multiplier: 3,
     }
 }
 
@@ -34,20 +34,24 @@ let money = 0
 clickerButton.addEventListener("click", clicker_action)
 
 shopButton.addEventListener("click",function() {
-    console.log(shop) 
-    shop.style.display = shop.style.display == "none" ? "" : "none" // = !shop.hidden 
-    shopButton.innerText = shop.style.display == "none" ? "Close Shop" : "Open Shop"
+    set_shop_visible(!get_shop_visible())
 }) 
 
-function clicker_action() {
-    money += (stats.multiplier.value + stats.toilets.value*10)
-    update()
+function set_shop_visible(new_visibility = false) {
+    shop.style.display = new_visibility == true ? "" : "none"
+    shopButton.innerText = new_visibility == true ? "Close Shop" : "Open Shop"
 }
 
-// Removes shop buttons then adds 
-function update() {
-    moneyText.innerText = `Money: ${money}`
+function get_shop_visible() {
+    return shop.style.display == "" ? true : false
+}
 
+function clicker_action() {
+    money += (stats.multiplier.value + stats.computers.value*10)
+    update(false)
+}
+
+function create_stats() {
     shop_buttons.innerHTML = ""
     statsDiv.innerHTML = ""
 
@@ -63,7 +67,7 @@ function update() {
         let new_button = document.createElement("button")
         new_button.id = stat_id
         new_button.type = "button"
-        if (stat["purchased"] == true) { 
+        if (stat.purchased == true) { 
             new_button.textContent = `Purchased ${stat.name}!`
         } else {
 
@@ -95,6 +99,15 @@ function update() {
 
     }
 }
+
+// Removes shop buttons then adds 
+function update(rebuild_items = true) {
+    moneyText.innerText = `Money: ${money}`
+
+    if (!rebuild_items) {return}
+
+    create_stats()
+}  
 
 function autoClicker() {
     if (stats["auto-click"].value == true) {
