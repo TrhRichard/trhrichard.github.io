@@ -4,12 +4,8 @@ body {
     color: white
 }
 
-#website-name {
+.website-name {
     margin-top: 25;
-    text-align: center;
-}
-
-#randomtext {
     text-align: center;
 }
 
@@ -28,29 +24,13 @@ body {
     margin-bottom: 5px;
 }
 
-#play-buttons {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#play-buttons button {
-    width: 35%;
-}
-
-button {
-    font-family: 'Trebuchet MS';
-    font-size: large;
-    transition-duration: 0.1s;
-    padding: 10px;
-    background-color: #454572;
-    border: 2px solid #14141f; 
-    color: white;
+.teehee-box {
+    border: 2px solid #14141f;
     border-radius: 5px;
-    margin-bottom: 10px;
+    background-color: #1f1f30;
+    width: 20%;
 }
 
-button:hover {
-    background-color: #3e3e66;
+.subaru-teehee:active {
+    filter: sepia()
 }
